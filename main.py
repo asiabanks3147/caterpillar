@@ -24,14 +24,19 @@ score_turtle.hideturtle()
 score_turle.speed (0)
 
 
-def outside_window()
-pass
-def display_score(current_score)
+def outside_window():
+
+
+pass:
+def display_score(current_score):
+
+
 def place_leaf():
 pass
 
 
 def start_game() :
+    while loop
     global game_started
     if game_started:
         return
@@ -44,6 +49,18 @@ def start_game() :
     caterpillar.showturtle()
     display_score(score)
     place_leaf()
+while true:
+    caterpillar.foward(caterpillar_speed)
+    if caterpillar.distance(leaf) < 20:
+        place_leaf()
+        caterpillar_length = caterpillar_length + 1
+        caterpillar.shapesize(1, caterpillar_length, 1)
+        caterpillar_speed = caterpillar_speed + 1
+        score = score + 10
+        display_score(score)
+    if outside_window() :
+        game_over()
+
 
 
 
