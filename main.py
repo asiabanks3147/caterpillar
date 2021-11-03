@@ -60,6 +60,20 @@ while true:
         display_score(score)
     if outside_window() :
         game_over()
+        t.onkey(start_game, 'space')
+        t.listen
+        t.mainloop()
+
+        left_wall = t.window_width() / 2
+        right_wall = t.window_width() / 2
+        top_wall = t.window_height() / 2
+        bottom_wall = t.window_height() / 2
+        (x, y) = caterpillar.pos()
+        caterpillar.color('yellow')
+        leaf.color('yellow')
+        t.penup()
+        t.hideturtle()
+        t.('GAME OVER'!, align='center', font('Arial', 30, 'normal')
 
 
 
