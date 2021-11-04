@@ -17,7 +17,7 @@ leaf.hideturtle()
 leaf.speed(0)
 game_started = False
 text_turtle = t.turtle()
-text_turtle.write('PRESS SPACE to start', align = 'center',/)
+text_turtle.write('PRESS SPACE to start', align = 'center',)
 text_turtle.hideturtle()
 score_turtle = t.turtle()
 score_turtle.hideturtle()
@@ -27,20 +27,20 @@ score_turle.speed (0)
 def outside_window():
 
 
-pass:
+    pass
 def display_score(current_score):
 
 
-def place_leaf():
-pass
+    def place_leaf():
+        pass
 
 
 def start_game() :
-    while loop
-    global game_started
+    while loop():
+        global game_started
     if game_started:
         return
-    game started = True
+    game_started = True
     score = 0
     text_turtle.clear
     caterpillar_speed = 2
@@ -73,7 +73,9 @@ while true:
         leaf.color('yellow')
         t.penup()
         t.hideturtle()
-        t.('GAME OVER'!, align='center', font('Arial', 30, 'normal')
+        t.write('GAME OVER!',align='center', font=('Arial',30,'normal'))
+
+        t.mainloop()
 
 
 
