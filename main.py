@@ -75,7 +75,7 @@ while true:
         t.hideturtle()
         t.write('GAME OVER!',align='center', font=('Arial',30,'normal'))
 
-        t.mainloop()
+t.mainloop()
 
 
 
