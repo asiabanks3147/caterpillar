@@ -74,9 +74,28 @@ while true:
         t.penup()
         t.hideturtle()
         t.write('GAME OVER!',align='center', font=('Arial',30,'normal'))
-
-t.mainloop()
-
+        score_turtle.clear()
+        score_turtle.penup()
+        x = (t.window_width() / 2) - 50
+        y = (t.window_height() / 2) - 50
+        score_turtle.setpos(x, y)
+        score_turtle.write(str(curent_score), align='right'
+ def move_up():
+    if caterpillar.heading() == 0 or caterpillar.heading() == 180:
+        caterpillar.setheading(90)
+def move_down():
+    if caterpillar.heading() == 0 or caterpillar.heading() == 180:
+        caterpillar.setheading(270)
+def move_left():
+     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
+         caterpillar.setheading(180)
+def move_right():
+    if caterpillar.heading() == 90 or caterpillar.heading() ==270: caterpillar.setheading(0)
+    t.onkey(move_up, 'Up')
+    t.onkey(move_right, 'Right')
+    t.onkey(move_down, 'Down')
+    t.onkey(move_left, 'Left')
+    t.mainloop()
 
 
 
